@@ -11,7 +11,158 @@
     tools:context="id.sch.smktelkom_mlg.project.tugas01.xiirpl4016.spbc.MainActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Pendaftaran Anggota SPBC "
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="177dp"
+        android:layout_height="145dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextNama"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editTextNama"
+        android:text="Nama :" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelas" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="241dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/checkBox"
+        android:layout_marginLeft="153dp"
+        android:layout_marginStart="63dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:entries="@array/kota" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="189dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextNama"
+            android:text="Jenis Kelamin" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Laki-Laki" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNama"
+        android:layout_toEndOf="@+id/radioGroupStatus"
+        android:layout_toRightOf="@+id/radioGroupStatus"
+        android:text="Posisi " />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_toEndOf="@+id/radioGroupStatus"
+        android:layout_toRightOf="@+id/radioGroupStatus"
+        android:checked="false"
+        android:text="PointGuard" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxPG"
+        android:layout_toEndOf="@+id/radioGroupStatus"
+        android:layout_toRightOf="@+id/radioGroupStatus"
+        android:checked="false"
+        android:text="Shooting Guard" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBoxSG"
+        android:layout_toEndOf="@+id/radioGroupStatus"
+        android:layout_toRightOf="@+id/radioGroupStatus"
+        android:checked="false"
+        android:text="Center" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="43dp"
+        android:layout_height="30dp"
+        android:text="Hasil"
+        tools:text="Hasil" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="New Text" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="New Text" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="New Text" />
 </LinearLayout>
